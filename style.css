@@ -1,0 +1,315 @@
+/* header style here */
+header{
+    background-color:blue;
+    height: 450px;
+}
+nav{
+    float: right;
+    padding-right: 160px;
+    padding-top: 30px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 22px;
+    margin-right: 10px;
+    background-color:rgb(214, 28, 28);
+    padding: 10px; 
+}
+nav a:hover{
+    background-color:blueviolet;
+}
+.images{
+    transition: width 10s ease-in 2s height 3s   ;
+}
+.images:hover{
+    width: 80%;
+    height: 80%;
+}
+.header-area{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 30px;
+}
+.header-heading{
+    position: relative;
+    left: 160px;
+    width: 430px;
+    font-size: 2.6em;
+    color: white; 
+}
+.header-heading span{
+    position: relative;
+    top: -40px;
+    font-size: 22px;
+}
+.header-image{
+    
+    width: 500px;
+    position: relative;
+    right: 90px;
+}
+.header-image img{
+    width: 85%;
+}
+/* header area end */
+/* -------images grid------ */
+.grid-area{
+    margin-top: 30px;
+    height: 2100px;
+    margin-bottom: 50px;
+}
+
+.grid-container{
+   
+    padding-left: 170px;
+    padding-right: 200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    height: 100%;
+    
+}
+
+.grid-cell{
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px 5px grey;
+    width: 95%;
+    height: 95%;
+}
+
+.grid-content{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+}
+.grid-cell img{
+    width: 100%;
+    height: 60%;
+}
+/* -------images grid end------ */
+/* highlight area start */
+.highlight-area{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 50px;
+    
+}
+
+.highlight-heading{
+    position: relative;
+    left:170px;
+    width: 450px;
+    font-size: 2.2em;
+    color: rgb(29, 29, 65);
+    
+}
+
+.highlight-heading p{
+    font-size: 18px;
+    width: 90%;
+    margin-top: -30px;
+}
+.header-highlight{
+    color: black;
+}
+.highlight-images{
+    margin-left: 300px;
+    width: 100%;
+}
+
+.highlight-images img{
+    width: 100%;
+    height: 100%;
+}
+/* highlight area end */
+/* footer area start */
+.footer-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img{
+    position: relative;
+    left: 230px;
+    width: 50%;
+}
+
+.footer-icon img{
+    position: relative;
+    left: 120px;
+    width: 10%;
+}
+/* media query */
+@media (max-width: 480px){
+    
+    main{
+        width: 220px;
+        border: 2px solid greenyellow;
+    }
+    .grid-area{
+        border: 2px solid red;
+        width: 210px;
+        height: 100%;
+        position: relative;
+        left:10px;
+    }
+    .grid-container{
+        padding: 0px 0px;
+        margin: 0px 0px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        
+        height: 100%;
+        position: relative;
+        grid-gap: 0px;
+        border: 2px solid yellow;
+    }
+    .grid-cell{
+        width: 200px;
+        height: 460px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px 0px;
+        border: 2px solid blue;
+    }
+    .grid-content{
+        width: 180px;
+        height: 250px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .grid-content>img{
+        width: 100%;
+        height: 150px;
+    }
+    .highlight-area{
+        padding: 0px 0px;
+        margin: 0px 0px;
+        width: 220px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: 2px solid blue;
+    }
+    .highlight-heading{
+        width: 100%;
+        position: relative;
+        left: 0px;
+        border: 3px solid red;
+        font-size: 15px;
+        
+    }
+    
+    .highlight-heading p{
+        width: 80%;
+        position: relative;
+        top: 30px;
+        font-size: 16px;
+    }
+    .highlight-heading span>a{
+        width: 50%;
+        position: relative;
+        top: 30px;
+        font-size:12px;
+    }
+    .highlight-images{
+        margin: 0px 0px;
+        border: 4px solid red;
+        width: 100%;
+        position: relative;
+        top:60px;
+        
+    }
+    .footer-area{
+        border: 3px solid black;
+        width: 220px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .footer-logo{
+        border: 3px solid red;
+    }
+    .footer-logo img{
+        
+        width: 70%;
+        position: relative;
+        left: 30px;
+        
+    }
+    .footer-icon{
+        border: 2px solid greenyellow;
+        width: 100%;
+        
+    }
+    .footer-icon img{
+        border: 2px solid black;
+        position: relative;
+        left: 50px;
+    }
+    .copyright{
+        padding: 0px 0px;
+        border: 2px solid red;
+        font-size: 13px;
+        position: relative;
+        top: -15px;
+        left: 35px;
+    }
+    header{
+        width:230px;
+        height: 500px;
+        margin-top: -40px;
+        border: 2px solid yellow;
+    }
+    nav{
+        padding: 0px 0px;
+        width: 100px;
+        margin-top: 40px;
+        border: 2px solid red;
+    }
+    nav span>a{
+        margin-left: 10px;
+        padding-left: 20px;
+        font-size:15px;
+    }
+    .header-area{
+        margin: 0px 0px;
+        padding: 0px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .header-heading{
+        width: 65%;
+        position: relative;
+        left: 20px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .header-heading>span>a{
+        position: relative;
+        top: 20px;
+        font-size:12px;
+    }
+    .header-image{
+        width: 100%;
+        position: relative;
+        
+        left: 15px;
+    }
+    .header-image img{
+        width: 90%;
+    }
+
+
+}
+/* footer area end */
